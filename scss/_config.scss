@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------------*/
 // needed imports
-@import url("https://fonts.googleapis.com/css?family=Abel&display=swap");
-@import url("https://fonts.googleapis.com/css?family=News+Cycle&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
 /*-----------------------------------------------------------------------------------*/
 //-- VARIABLES --\\
 $primary-color: #232323;
@@ -11,15 +11,19 @@ $success-color: #29c329;
 $danger-color: #e80909;
 $warning-color: #f6bc01;
 
+$light: #d8d8d8;
+$grey: #b1b1b1;
+$dark: #414141;
+
 $nav-bg-color: #222;
 $body-bg-color: #333;
 $dark-bg-color: #212121;
 $light-bg-color: #a2a2a2;
 
-$txt-font: "News Cycle", sans-serif;
-$hd-font: "Abel", sans-serif;
-$xl-font: 6rem;
-$lg-font: 3.5rem;
+$hd-font: "Montserrat", sans-serif;
+$txt-font: "Squada One", cursive;
+$xl-font: 3.5rem;
+$lg-font: 3rem;
 $md-font: 2.5rem;
 $sm-font: 1.5rem;
 $xs-font: 1rem;

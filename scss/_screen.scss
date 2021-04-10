@@ -1,39 +1,55 @@
 //-- TABLETS IPAD MINILAPTOP --\\
 @include mediaMd {
-  // header navbar
-  header#main-header {
-    .topnav {
-      a {
-        &:not(:first-child) {
-          display: none;
+  header#header {
+    #myTopnav {
+      .logo {
+        text-align: center;
+        a.active {
+          width: 100%;
+          background: none;
         }
-        &.navBtn {
-          float: right;
-          display: block;
+      }
+      .menu {
+        margin: 0;
+        a {
+          display: none;
+          &.navBtn {
+            float: right;
+            display: block;
+          }
         }
       }
       &.responsive {
-        position: relative;
-        a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
-        .navBtn {
-          position: absolute;
-          right: 0;
-          top: 0;
+        flex-direction: column;
+        .menu {
+          a {
+            display: block;
+            text-align: left;
+          }
+          .navBtn {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
         }
       }
     }
+    .header {
+      h1 {
+        font-size: $sm-font;
+      }
+      h2 {
+        font-size: $xs-font;
+      }
+    }
   }
-  #cover-section,
-  #music-section,
-  #vedio-section,
-  #giftCards-section {
+  #header,
+  #music,
+  #vedio,
+  #giftCards {
     min-height: 70vh;
   }
-  #music-section {
+  #music {
     .grid {
       grid-template-columns: 1fr;
       .bottom {
@@ -61,22 +77,22 @@
     font-size: $xs-font;
   }
   // main-content
-  #cover-section,
-  #music-section,
-  #vedio-section,
-  #giftCards-section {
+  #header,
+  #music,
+  #vedio,
+  #giftCards {
     min-height: 50vh;
   }
 
-  #entertainement-section {
+  #entertainement {
     display: none;
   }
-  #giftCards-section {
+  #giftCards {
     .grid {
       grid-template-columns: 1fr;
     }
   }
-  #music-section {
+  #music {
     .grid {
       grid-template-columns: 1fr;
       .bottom {

@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Abel&display=swap");
-@import url("https://fonts.googleapis.com/css?family=News+Cycle&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
 /*-----------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------*/
@@ -16,7 +16,7 @@ html {
 
 body {
   background: #a2a2a2;
-  font-family: "News Cycle", sans-serif;
+  font-family: "Squada One", cursive;
   line-height: 1.3;
 }
 
@@ -26,17 +26,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Abel", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 h3 {
@@ -49,6 +49,10 @@ h4 {
 
 p {
   margin: 0.5rem 0;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 figure {
@@ -80,12 +84,6 @@ span {
   width: 90%;
   margin: 0 auto;
   padding: 0.5rem;
-}
-
-.highlight {
-  padding: 1rem;
-  border-radius: 3px;
-  background: rgba(33, 33, 33, 0.3);
 }
 
 .btn,
@@ -144,73 +142,101 @@ button {
   grid-gap: 1rem;
 }
 
-header#main-header .topnav {
+header#header #myTopnav {
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  position: fixed;
   overflow: hidden;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #212121;
   border-bottom: 2px solid #e80909;
 }
-header#main-header .topnav a {
-  float: left;
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 2rem;
+header#header #myTopnav .menu {
+  margin-right: 1rem;
 }
-header#main-header .topnav a.active {
+header#header #myTopnav a {
+  display: inline-block;
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 1rem 1.5rem;
+}
+header#header #myTopnav a.active {
   background-color: rgba(162, 162, 162, 0.2);
   color: #f6bc01;
 }
-header#main-header .topnav a:hover {
+header#header #myTopnav a:hover {
   transition: all 0.5s ease-out;
   background-color: rgba(162, 162, 162, 0.2);
-  color: #55cbde;
+  color: #e80909;
 }
-header#main-header .topnav .navBtn {
+header#header #myTopnav .navBtn {
   display: none;
 }
+header#header .header {
+  background: url("https://images.unsplash.com/photo-1528032947483-4e1df543253a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80") no-repeat center/cover;
+  height: 100vh;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header#header .jumbutron {
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 80%;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  border-radius: 10px;
+  border: 3px solid #f6bc01;
+  transform: translate(-50%, -50%);
+  background: rgba(246, 188, 1, 0.1);
+}
 
-#cover-section,
-#entertainement-section {
+#entertainment {
   display: flex;
   align-items: center;
 }
 
-#cover-section,
-#music-section,
+#music,
 #vedio-seoncti {
   min-height: 100vh;
 }
 
-#entertainement-section,
-#giftCards-section {
+#entertainement,
+#giftCards {
   min-height: 47vh;
 }
 
-#cover-section {
-  background: url("https://images.unsplash.com/photo-1528032947483-4e1df543253a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80") no-repeat center/cover;
-}
-
-#music-section .grid {
+#music .grid {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(1fr, auto);
 }
-#music-section .grid .bottom {
+#music .grid .bottom {
   grid-column: 1/4;
   grid-row: 2;
 }
 
-#entertainement-section {
+#entertainment {
   background: url("https://images.unsplash.com/photo-1522249210728-7cd95094022a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80") no-repeat center/cover;
   color: #55cbde;
 }
 
-#giftCards-section .grid {
+#giftCards .grid {
   grid-template-columns: 1fr 1fr;
 }
-#giftCards-section .grid .box1 {
+#giftCards .grid .box1 {
   display: contents;
 }
-#giftCards-section .grid .box2 a {
+#giftCards .grid .box2 a {
   color: #55cbde;
 }
 
@@ -232,45 +258,60 @@ header#main-header .topnav .navBtn {
 }
 
 @media screen and (max-width: 768px) {
-  header#main-header .topnav a:not(:first-child) {
+  header#header #myTopnav .logo {
+    text-align: center;
+  }
+  header#header #myTopnav .logo a.active {
+    width: 100%;
+    background: none;
+  }
+  header#header #myTopnav .menu {
+    margin: 0;
+  }
+  header#header #myTopnav .menu a {
     display: none;
   }
-  header#main-header .topnav a.navBtn {
+  header#header #myTopnav .menu a.navBtn {
     float: right;
     display: block;
   }
-  header#main-header .topnav.responsive {
-    position: relative;
+  header#header #myTopnav.responsive {
+    flex-direction: column;
   }
-  header#main-header .topnav.responsive a {
-    float: none;
+  header#header #myTopnav.responsive .menu a {
     display: block;
     text-align: left;
   }
-  header#main-header .topnav.responsive .navBtn {
+  header#header #myTopnav.responsive .menu .navBtn {
     position: absolute;
     right: 0;
     top: 0;
   }
+  header#header .header h1 {
+    font-size: 1.5rem;
+  }
+  header#header .header h2 {
+    font-size: 1rem;
+  }
 
-  #cover-section,
-#music-section,
-#vedio-section,
-#giftCards-section {
+  #header,
+#music,
+#vedio,
+#giftCards {
     min-height: 70vh;
   }
 
-  #music-section .grid {
+  #music .grid {
     grid-template-columns: 1fr;
   }
-  #music-section .grid .bottom {
+  #music .grid .bottom {
     grid-row: auto;
     grid-column: 1/4;
   }
 }
 @media screen and (max-width: 500px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   h2 {
@@ -289,25 +330,25 @@ header#main-header .topnav .navBtn {
     font-size: 1rem;
   }
 
-  #cover-section,
-#music-section,
-#vedio-section,
-#giftCards-section {
+  #header,
+#music,
+#vedio,
+#giftCards {
     min-height: 50vh;
   }
 
-  #entertainement-section {
+  #entertainement {
     display: none;
   }
 
-  #giftCards-section .grid {
+  #giftCards .grid {
     grid-template-columns: 1fr;
   }
 
-  #music-section .grid {
+  #music .grid {
     grid-template-columns: 1fr;
   }
-  #music-section .grid .bottom {
+  #music .grid .bottom {
     grid-column: 1;
     grid-row: auto;
   }
