@@ -1,9 +1,3 @@
-//-- WIDESCREENS --\\
-@include mediaXl {
-}
-//-- DESKTOP AND LAPTOPS --\\
-@include mediaLg {
-}
 //-- TABLETS IPAD MINILAPTOP --\\
 @include mediaMd {
   // header navbar
@@ -42,19 +36,6 @@
   #music-section {
     .grid {
       grid-template-columns: 1fr;
-      .left,
-      .middel {
-        grid-row: auto;
-        grid-column: auto;
-      }
-      .middel {
-        ul {
-          .level {
-            max-width: 55%;
-          }
-        }
-      }
-      .right,
       .bottom {
         grid-row: auto;
         grid-column: 1/4;
@@ -98,20 +79,9 @@
   #music-section {
     .grid {
       grid-template-columns: 1fr;
-      .left,
-      .middel,
-      .right,
       .bottom {
-        // grid-column: 1/4;
         grid-column: 1;
         grid-row: auto;
-      }
-      .middel {
-        ul {
-          .level {
-            max-width: 45%;
-          }
-        }
       }
     }
   }

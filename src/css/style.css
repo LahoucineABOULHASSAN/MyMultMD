@@ -7,13 +7,17 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: #a2a2a2;
   font-family: "News Cycle", sans-serif;
   line-height: 1.3;
-  box-sizing: border-box;
 }
 
 h1,
@@ -64,7 +68,7 @@ a {
   text-decoration: none;
 }
 
-i {
+i.icon {
   margin-right: 1rem;
 }
 
@@ -135,34 +139,6 @@ button {
   color: #000;
 }
 
-.text {
-  font-size: 1.5rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.margin-tb {
-  margin: 1rem 0;
-}
-
-.margin-t {
-  margin-top: 1rem;
-}
-
-.margin-b {
-  margin-bottom: 1rem;
-}
-
-.padding {
-  padding: 1rem;
-}
-
 .grid {
   display: grid;
   grid-gap: 1rem;
@@ -211,88 +187,12 @@ header#main-header .topnav .navBtn {
 }
 
 #cover-section {
-  background: url("../img/cover7.jpeg") no-repeat center/cover;
+  background: url("https://images.unsplash.com/photo-1528032947483-4e1df543253a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80") no-repeat center/cover;
 }
 
 #music-section .grid {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(1fr, auto);
-}
-#music-section .grid .left,
-#music-section .grid .middel {
-  border-radius: 2px;
-  background: rgba(162, 162, 162, 0.2);
-}
-#music-section .grid .left .album h3,
-#music-section .grid .left h3,
-#music-section .grid .middel .album h3,
-#music-section .grid .middel h3 {
-  background: #000;
-  color: #fff;
-  padding: 1rem;
-}
-#music-section .grid .left {
-  border: 1px solid #f6bc01;
-  grid-column: 1/2;
-  grid-row: 1;
-}
-#music-section .grid .left .album h3 {
-  border-bottom: none;
-  padding: 1rem;
-  margin-bottom: 0;
-}
-#music-section .grid .left figure {
-  width: 100%;
-}
-#music-section .grid .left .info {
-  border-top: none;
-  padding: 1rem;
-}
-#music-section .grid .left .info h3,
-#music-section .grid .left .info h4 {
-  text-align: left;
-}
-#music-section .grid .left .info h3 {
-  background: none;
-  padding: 0;
-}
-#music-section .grid .left .info h4:nth-child(3) {
-  display: inline;
-}
-#music-section .grid .middel {
-  border: 1px solid #f6bc01;
-  grid-column: 2/3;
-  grid-row: 1;
-}
-#music-section .grid .middel .playlist,
-#music-section .grid .middel ul {
-  margin: auto;
-}
-#music-section .grid .middel .playlist {
-  text-align: center;
-}
-#music-section .grid .middel .playlist .play-btns {
-  background: rgba(162, 162, 162, 0.3);
-  padding: 0.5rem 1rem;
-}
-#music-section .grid .middel ul {
-  text-align: center;
-  margin-top: 2rem;
-}
-#music-section .grid .middel ul li {
-  margin: 1rem 0;
-}
-#music-section .grid .middel ul li .level {
-  width: 60%;
-  display: inline-block;
-  vertical-align: middle;
-}
-#music-section .grid .right {
-  width: 100%;
-  height: 80vh;
-  background: url("../img/cover3.jpeg") no-repeat center/cover;
-  grid-column: 3/4;
-  grid-row: auto;
 }
 #music-section .grid .bottom {
   grid-column: 1/4;
@@ -300,7 +200,7 @@ header#main-header .topnav .navBtn {
 }
 
 #entertainement-section {
-  background: url("../img/enter3.jpeg") no-repeat center/cover;
+  background: url("https://images.unsplash.com/photo-1522249210728-7cd95094022a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80") no-repeat center/cover;
   color: #55cbde;
 }
 
@@ -363,16 +263,7 @@ header#main-header .topnav .navBtn {
   #music-section .grid {
     grid-template-columns: 1fr;
   }
-  #music-section .grid .left,
-#music-section .grid .middel {
-    grid-row: auto;
-    grid-column: auto;
-  }
-  #music-section .grid .middel ul .level {
-    max-width: 55%;
-  }
-  #music-section .grid .right,
-#music-section .grid .bottom {
+  #music-section .grid .bottom {
     grid-row: auto;
     grid-column: 1/4;
   }
@@ -416,15 +307,9 @@ header#main-header .topnav .navBtn {
   #music-section .grid {
     grid-template-columns: 1fr;
   }
-  #music-section .grid .left,
-#music-section .grid .middel,
-#music-section .grid .right,
-#music-section .grid .bottom {
+  #music-section .grid .bottom {
     grid-column: 1;
     grid-row: auto;
-  }
-  #music-section .grid .middel ul .level {
-    max-width: 45%;
   }
 
   #main-footer .grid {
