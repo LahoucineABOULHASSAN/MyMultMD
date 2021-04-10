@@ -1,0 +1,26 @@
+header#main-header {
+  .topnav {
+    overflow: hidden;
+    background-color: $dark-bg-color;
+    border-bottom: 2px solid $danger-color;
+    a {
+      float: left;
+      display: block;
+      color: setColor($dark-bg-color);
+      text-align: center;
+      padding: 1rem 2rem;
+      &.active {
+        background-color: rgba($light-bg-color, 0.2);
+        color: $warning-color;
+      }
+      &:hover {
+        @include slowChange;
+        background-color: rgba($light-bg-color, 0.2);
+        color: $info-color;
+      }
+    }
+    .navBtn {
+      display: none;
+    }
+  }
+}

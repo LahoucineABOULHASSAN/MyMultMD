@@ -1,0 +1,69 @@
+/*-----------------------------------------------------------------------------------*/
+// needed imports
+@import url("https://fonts.googleapis.com/css?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css?family=News+Cycle&display=swap");
+/*-----------------------------------------------------------------------------------*/
+//-- VARIABLES --\\
+$primary-color: #232323;
+$secondary-color: #c9c9c9;
+$info-color: #55cbde;
+$success-color: #29c329;
+$danger-color: #e80909;
+$warning-color: #f6bc01;
+
+$nav-bg-color: #222;
+$body-bg-color: #333;
+$dark-bg-color: #212121;
+$light-bg-color: #a2a2a2;
+
+$txt-font: "News Cycle", sans-serif;
+$hd-font: "Abel", sans-serif;
+$xl-font: 6rem;
+$lg-font: 3.5rem;
+$md-font: 2.5rem;
+$sm-font: 1.5rem;
+$xs-font: 1rem;
+
+$cover: url("../img/cover7.jpeg");
+$enter: url("../img/enter3.jpeg");
+$right: url("../img/cover3.jpeg");
+/*-----------------------------------------------------------------------------------*/
+//-- MIXINS --\\
+@mixin slowChange {
+  transition: all 0.5s ease-out;
+}
+// Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
+/*-----------------------------------------------------------------------------------*/
+//-- FUNCTIONS --\\
+// change the text color depending of it's cover
+@function setColor($bg-color) {
+  @if (lightness($bg-color) > 30) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+// return a background picture
+@function setBG($url) {
+  @return $url no-repeat center/cover;
+}

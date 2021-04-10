@@ -1,0 +1,21 @@
+//-- GRID LINKS --\\
+#main-footer {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    .box {
+      border-bottom: 2px solid $danger-color;
+      li a {
+        color: setColor($dark-bg-color);
+        &:hover {
+          text-decoration: underline;
+          color: $danger-color;
+        }
+      }
+      &:hover {
+        h4 i {
+          color: $danger-color;
+        }
+      }
+    }
+  }
+}
