@@ -1,6 +1,6 @@
 {
   "name": "mymedia",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "a landing page for myMedia content like music movies and so on with html5 and sass technologies",
   "main": "app.js",
   "homepage": "https://myMedia.netlify.app",
