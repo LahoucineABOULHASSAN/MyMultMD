@@ -9,7 +9,6 @@ html {
 body {
   background: $light-bg-color;
   font-family: $txt-font;
-  line-height: 1.3;
 }
 h1,
 h2,
@@ -35,7 +34,6 @@ h4 {
 }
 p {
   margin: 0.5rem 0;
-  font-weight: 300;
   text-align: center;
   font-size: $sm-font;
   letter-spacing: 2px;
@@ -58,11 +56,6 @@ i.icon {
 }
 span {
   color: $warning-color;
-}
-.container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 0.5rem;
 }
 .btn,
 button {
@@ -95,22 +88,4 @@ button {
       color: setColor($danger-color);
     }
   }
-}
-.dark-bg {
-  background: $dark-bg-color;
-  color: setColor($dark-bg-color);
-  a {
-    color: setColor($dark-bg-color);
-  }
-}
-.light-bg {
-  background: $light-bg-color;
-  color: setColor($light-bg-color);
-  a {
-    color: setColor($light-bg-color);
-  }
-}
-.grid {
-  display: grid;
-  grid-gap: 1rem;
 }

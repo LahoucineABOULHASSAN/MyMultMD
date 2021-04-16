@@ -43,21 +43,6 @@
       }
     }
   }
-  #header,
-  #music,
-  #vedio,
-  #giftCards {
-    min-height: 70vh;
-  }
-  #music {
-    .grid {
-      grid-template-columns: 1fr;
-      .bottom {
-        grid-row: auto;
-        grid-column: 1/4;
-      }
-    }
-  }
 }
 //-- SMARTPHONES --\\
 @include mediaSm {
@@ -75,38 +60,5 @@
   }
   .text {
     font-size: $xs-font;
-  }
-  // main-content
-  #header,
-  #music,
-  #vedio,
-  #giftCards {
-    min-height: 50vh;
-  }
-
-  #entertainement {
-    display: none;
-  }
-  #giftCards {
-    .grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  #music {
-    .grid {
-      grid-template-columns: 1fr;
-      .bottom {
-        grid-column: 1;
-        grid-row: auto;
-      }
-    }
-  }
-  // main-footer
-  #main-footer {
-    .grid {
-      text-align: center;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 0.3rem;
-    }
   }
 }

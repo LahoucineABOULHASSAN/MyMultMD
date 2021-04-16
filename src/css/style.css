@@ -1,6 +1,5 @@
 /*-----------------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
 /*-----------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------------*/
@@ -16,8 +15,7 @@ html {
 
 body {
   background: #a2a2a2;
-  font-family: "Squada One", cursive;
-  line-height: 1.3;
+  font-family: "Arial Narrow", Arial, sans-serif;
 }
 
 h1,
@@ -49,7 +47,6 @@ h4 {
 
 p {
   margin: 0.5rem 0;
-  font-weight: 300;
   text-align: center;
   font-size: 1.5rem;
   letter-spacing: 2px;
@@ -78,12 +75,6 @@ i.icon {
 
 span {
   color: #f6bc01;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 0.5rem;
 }
 
 .btn,
@@ -119,27 +110,6 @@ button {
   transition: all 0.5s ease-out;
   background: #e80909;
   color: #000;
-}
-
-.dark-bg {
-  background: #212121;
-  color: #fff;
-}
-.dark-bg a {
-  color: #fff;
-}
-
-.light-bg {
-  background: #a2a2a2;
-  color: #000;
-}
-.light-bg a {
-  color: #000;
-}
-
-.grid {
-  display: grid;
-  grid-gap: 1rem;
 }
 
 header#header #myTopnav {
@@ -201,28 +171,128 @@ header#header .jumbutron {
   background: rgba(246, 188, 1, 0.1);
 }
 
-#entertainment {
+section {
+  max-width: 1080px;
+  padding: 4rem 0;
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(1fr, auto);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.flex {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.flex-rows {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.text {
+  margin: 2rem 0;
+}
+
+.dark-bg {
+  background: #212121;
+  color: #fff;
+}
+.dark-bg a {
+  color: #fff;
+}
+
+.light-bg {
+  background: #a2a2a2;
+  color: #000;
+}
+.light-bg a {
+  color: #000;
 }
 
 #music,
-#vedio-seoncti {
+#vedio {
   min-height: 100vh;
 }
 
-#entertainement,
-#giftCards {
-  min-height: 47vh;
+#music h2 {
+  margin-bottom: 2rem;
+}
+#music .grid {
+  margin: 1rem 0;
+}
+#music .music-box {
+  position: relative;
+  height: fit-content;
+}
+#music .music-box img,
+#music .music-box .caption {
+  width: 275px;
+  height: 275px;
+}
+#music .music-box .caption {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: #414141;
+  position: absolute;
+  background: #ffffff8f;
+}
+#music .music-box .caption h3 {
+  text-transform: uppercase;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+#music .music-box .caption span {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #e80909;
+}
+#music .music-card {
+  width: 275px;
+  padding: 0.5rem;
+  background: #ffffffef;
+  text-transform: capitalize;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+#music .music-card span {
+  font-weight: 600;
+}
+#music .music-card span,
+#music .music-card i.icon {
+  color: #414141;
 }
 
-#music .grid {
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(1fr, auto);
+#vedio figure {
+  width: 100%;
+  margin: 2rem auto;
 }
-#music .grid .bottom {
-  grid-column: 1/4;
-  grid-row: 2;
+#vedio figure .video {
+  width: 100%;
+  height: auto;
+  border: 1px solid #f6bc01;
+  border-radius: 15px;
+}
+#vedio figure .video:focus {
+  outline: none;
 }
 
 #entertainment {
@@ -240,6 +310,9 @@ header#header .jumbutron {
   color: #55cbde;
 }
 
+#main-footer p {
+  margin: 0;
+}
 #main-footer .grid {
   grid-template-columns: repeat(4, 1fr);
 }
@@ -293,21 +366,6 @@ header#header .jumbutron {
   header#header .header h2 {
     font-size: 1rem;
   }
-
-  #header,
-#music,
-#vedio,
-#giftCards {
-    min-height: 70vh;
-  }
-
-  #music .grid {
-    grid-template-columns: 1fr;
-  }
-  #music .grid .bottom {
-    grid-row: auto;
-    grid-column: 1/4;
-  }
 }
 @media screen and (max-width: 500px) {
   h1 {
@@ -328,35 +386,6 @@ header#header .jumbutron {
 
   .text {
     font-size: 1rem;
-  }
-
-  #header,
-#music,
-#vedio,
-#giftCards {
-    min-height: 50vh;
-  }
-
-  #entertainement {
-    display: none;
-  }
-
-  #giftCards .grid {
-    grid-template-columns: 1fr;
-  }
-
-  #music .grid {
-    grid-template-columns: 1fr;
-  }
-  #music .grid .bottom {
-    grid-column: 1;
-    grid-row: auto;
-  }
-
-  #main-footer .grid {
-    text-align: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.3rem;
   }
 }
 

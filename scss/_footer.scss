@@ -1,5 +1,8 @@
 //-- GRID LINKS --\\
 #main-footer {
+  p {
+    margin: 0;
+  }
   .grid {
     grid-template-columns: repeat(4, 1fr);
     .box {
