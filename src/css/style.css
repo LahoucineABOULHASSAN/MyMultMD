@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+*:not(i.icon) {
+  transition: all 0.5s ease-out;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -98,7 +102,6 @@ button {
   color: #fff;
 }
 .btn.btn-primary:hover {
-  transition: all 0.5s ease-out;
   background: #f6bc01;
   color: #000;
 }
@@ -177,6 +180,10 @@ section {
   margin: 0 auto;
 }
 
+footer {
+  padding: 4rem 0;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -186,6 +193,10 @@ section {
   display: grid;
   grid-gap: 1rem;
   grid-auto-rows: minmax(1fr, auto);
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
 }
 
 .grid-3 {
@@ -297,16 +308,41 @@ section {
 
 #entertainment {
   background: url("https://images.unsplash.com/photo-1522249210728-7cd95094022a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80") no-repeat center/cover;
-  color: #55cbde;
+}
+#entertainment .highlight {
+  color: #d8d8d8;
+}
+#entertainment .highlight .text {
+  padding: 1rem;
+  text-align: justify;
+  background: rgba(65, 65, 65, 0.4);
 }
 
-#giftCards .grid {
-  grid-template-columns: 1fr 1fr;
+#gift-card {
+  padding: 0;
 }
-#giftCards .grid .box1 {
-  display: contents;
+#gift-card .box1 {
+  height: 100%;
 }
-#giftCards .grid .box2 a {
+#gift-card .box1 img {
+  height: 100%;
+}
+#gift-card .box2 {
+  padding: 2rem;
+}
+#gift-card .box2 h3,
+#gift-card .box2 a {
+  color: #e80909;
+  text-transform: uppercase;
+}
+#gift-card .box2 .text {
+  text-align: justify;
+  color: #b1b1b1;
+}
+#gift-card .box2 hr {
+  margin-bottom: 1rem;
+}
+#gift-card .box2 a:hover {
   color: #55cbde;
 }
 

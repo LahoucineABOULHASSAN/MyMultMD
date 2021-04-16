@@ -4,6 +4,9 @@ section {
   padding: 4rem 0;
   margin: 0 auto;
 }
+footer {
+  padding: 4rem 0;
+}
 .container {
   width: 90%;
   margin: 0 auto;
@@ -12,6 +15,9 @@ section {
   display: grid;
   grid-gap: 1rem;
   grid-auto-rows: minmax(1fr, auto);
+}
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
 }
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
@@ -121,19 +127,40 @@ section {
 //-- ENTERTAINEMENT SECTION --\\
 #entertainment {
   background: setBG($entertainment);
-  color: $info-color;
+  .highlight {
+    color: $light;
+    .text {
+      padding: 1rem;
+      text-align: justify;
+      background: rgba($dark, 0.4);
+    }
+  }
 }
 //-- GIFT CARDS SECTION --\\
-#giftCards {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-    .box1 {
-      display: contents;
+#gift-card {
+  padding: 0;
+  .box1 {
+    height: 100%;
+    img {
+      height: 100%;
     }
-    .box2 {
-      a {
-        color: $info-color;
-      }
+  }
+  .box2 {
+    h3,
+    a {
+      color: $danger-color;
+      text-transform: uppercase;
+    }
+    padding: 2rem;
+    .text {
+      text-align: justify;
+      color: $grey;
+    }
+    hr {
+      margin-bottom: 1rem;
+    }
+    a:hover {
+      color: $info-color;
     }
   }
 }
