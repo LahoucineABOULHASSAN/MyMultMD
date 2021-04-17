@@ -180,10 +180,6 @@ section {
   margin: 0 auto;
 }
 
-footer {
-  padding: 4rem 0;
-}
-
 .container {
   width: 90%;
   margin: 0 auto;
@@ -201,6 +197,10 @@ footer {
 
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .flex {
@@ -235,11 +235,6 @@ footer {
 }
 .light-bg a {
   color: #000;
-}
-
-#music,
-#vedio {
-  min-height: 100vh;
 }
 
 #music h2 {
@@ -346,27 +341,60 @@ footer {
   color: #55cbde;
 }
 
-#main-footer p {
-  margin: 0;
+#footer {
+  padding-top: 4rem;
 }
-#main-footer .grid {
-  grid-template-columns: repeat(4, 1fr);
+#footer .grid-4 {
+  margin-bottom: 4rem;
 }
-#main-footer .grid .box {
-  border-bottom: 2px solid #e80909;
+#footer .box,
+#footer p {
+  padding: 1rem;
 }
-#main-footer .grid .box li a {
-  color: #fff;
+#footer .box {
+  border-bottom: 2px solid #f6bc01;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-#main-footer .grid .box li a:hover {
+#footer .box li a {
+  color: #b1b1b1;
+  line-height: 1.5;
+}
+#footer .box li a:hover {
   text-decoration: underline;
-  color: #e80909;
+  color: #f6bc01;
+  padding-left: 0.5rem;
 }
-#main-footer .grid .box:hover h4 i {
-  color: #e80909;
+#footer .box:hover h4 {
+  color: #f6bc01;
+}
+#footer p {
+  margin: 0;
+  color: #b1b1b1;
+}
+#footer p span {
+  color: #55cbde;
 }
 
 @media screen and (max-width: 768px) {
+  header#header #myTopnav {
+    border: none;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes fade {
+    0% {
+      background: none;
+      opacity: 0.1;
+    }
+    100% {
+      background-color: rgba(33, 33, 33, 0.7);
+      opacity: 1;
+    }
+  }
   header#header #myTopnav .logo {
     text-align: center;
   }
@@ -387,6 +415,25 @@ footer {
   header#header #myTopnav.responsive {
     flex-direction: column;
   }
+  header#header #myTopnav.responsive .menu {
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    transform: translate(0, -100%);
+    border-bottom: 2px solid #e80909;
+  }
+  @keyframes slide {
+    0% {
+      transform: translate(0, -100%);
+      opacity: 0.1;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
   header#header #myTopnav.responsive .menu a {
     display: block;
     text-align: left;
@@ -402,10 +449,19 @@ footer {
   header#header .header h2 {
     font-size: 1rem;
   }
+
+  #music .music-box img,
+#music .music-box .caption {
+    width: 175px;
+    height: 175px;
+  }
+  #music .music-links .music-card {
+    width: 175px;
+  }
 }
 @media screen and (max-width: 500px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.1rem;
   }
 
   h2 {
@@ -422,6 +478,40 @@ footer {
 
   .text {
     font-size: 1rem;
+  }
+
+  .grid-2,
+.grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #music .grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  #music .music-box img,
+#music .music-box .caption {
+    width: 120px;
+    height: 120px;
+  }
+  #music .music-box .caption h3 {
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+  #music .music-box .caption span {
+    display: none;
+  }
+  #music .music-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #music .music-links .music-card {
+    width: auto;
+  }
+  #music .music-links .music-card span {
+    display: none;
   }
 }
 

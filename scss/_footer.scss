@@ -1,24 +1,37 @@
 //-- GRID LINKS --\\
-#main-footer {
+#footer {
+  padding-top: 4rem;
+  .grid-4 {
+    margin-bottom: 4rem;
+  }
+  .box,
+  p {
+    padding: 1rem;
+  }
+  .box {
+    border-bottom: 2px solid $warning-color;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    li a {
+      color: $grey;
+      line-height: 1.5;
+      &:hover {
+        text-decoration: underline;
+        color: $warning-color;
+        padding-left: 0.5rem;
+      }
+    }
+    &:hover {
+      h4 {
+        color: $warning-color;
+      }
+    }
+  }
   p {
     margin: 0;
-  }
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-    .box {
-      border-bottom: 2px solid $danger-color;
-      li a {
-        color: setColor($dark-bg-color);
-        &:hover {
-          text-decoration: underline;
-          color: $danger-color;
-        }
-      }
-      &:hover {
-        h4 i {
-          color: $danger-color;
-        }
-      }
+    color: $grey;
+    span {
+      color: $info-color;
     }
   }
 }

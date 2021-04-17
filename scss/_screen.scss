@@ -2,6 +2,8 @@
 @include mediaMd {
   header#header {
     #myTopnav {
+      border: none;
+      @include fadein;
       .logo {
         text-align: center;
         a.active {
@@ -22,6 +24,8 @@
       &.responsive {
         flex-direction: column;
         .menu {
+          @include slidein;
+          border-bottom: 2px solid $danger-color;
           a {
             display: block;
             text-align: left;
@@ -43,11 +47,25 @@
       }
     }
   }
+  #music {
+    .music-box {
+      img,
+      .caption {
+        width: 175px;
+        height: 175px;
+      }
+    }
+    .music-links {
+      .music-card {
+        width: 175px;
+      }
+    }
+  }
 }
 //-- SMARTPHONES --\\
 @include mediaSm {
   h1 {
-    font-size: $lg-font;
+    font-size: 2.1rem;
   }
   h2 {
     font-size: $sm-font;
@@ -60,5 +78,42 @@
   }
   .text {
     font-size: $xs-font;
+  }
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  #music {
+    .grid-3 {
+      grid-template-columns: 1fr 1fr;
+    }
+    .music-box {
+      img,
+      .caption {
+        width: 120px;
+        height: 120px;
+      }
+      .caption {
+        h3 {
+          font-size: $xs-font;
+          text-transform: capitalize;
+        }
+        span {
+          display: none;
+        }
+      }
+    }
+    .music-links {
+      grid-template-columns: repeat(3, 1fr);
+      .music-card {
+        width: auto;
+        span {
+          display: none;
+        }
+      }
+    }
   }
 }
