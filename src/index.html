@@ -26,12 +26,12 @@
           >
         </div>
         <div class="menu">
-          <a href="#header">OverView</a>
+          <a href="#header">home</a>
           <a href="#music">Music</a>
           <a href="#vedio">Vedio</a>
           <a href="#gift-card">Gifts</a>
-          <a href="#footer">ContactUS</a>
-          <a href="#footer">AboutUS</a>
+          <a href="#about-us">About us</a>
+          <a href="#contact-us">Contact us</a>
           <a href="javascript:void(0);" class="navBtn" onclick="displayMenu()">
             <i class="bars icon responsive-btn"></i>
           </a>
@@ -223,51 +223,104 @@
           <a href="#"><i class="chevron right icon"></i>Redeem</a>
         </div>
       </section>
+      <section id="about-us" class="dark-bg grid grid-2">
+        <div class="box2">
+          <h3>About Us</h3>
+          <p class="text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+            expedita tempore quasi omnis a aut et totam illo fuga accusamus
+            dolorum vero, ut harum consectetur. porro.
+          </p>
+          <p class="text">
+            Already have an Orange MyTunes Music Gift Card? Minima molestias
+            officiis culpa non sed dicta itaque. Et aliquam illo obcaecati
+            molestias veritatis porro.
+          </p>
+          <hr />
+          <a href="https://vueportfolioapp.netlify.app/" target="_blank"
+            ><i class="chevron right icon"></i>Visit my portfolio</a
+          >
+        </div>
+        <div class="box1">
+          <img
+            src="https://images.unsplash.com/photo-1607083681678-52733140f93a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
+            alt="gift boxs"
+          />
+        </div>
+      </section>
     </main>
     <footer id="footer">
-      <div class="container light-bg">
-        <div class="grid grid-4">
-          <div class="box padding dark-bg">
-            <h4><i class="music icon"></i> Music</h4>
-            <ul class="nostyle">
-              <li><a href="#">pop</a></li>
-              <li><a href="#">rap</a></li>
-              <li><a href="#">rock</a></li>
-              <li><a href="#">occidental</a></li>
-            </ul>
-          </div>
-          <div class="box padding dark-bg">
-            <h4><i class="film icon"></i> Movies</h4>
-            <ul>
-              <li><a href="#">horror</a></li>
-              <li><a href="#">drama</a></li>
-              <li><a href="#">comedy</a></li>
-              <li><a href="#">action</a></li>
-            </ul>
-          </div>
-          <div class="box padding dark-bg">
-            <h4><i class="tv icon"></i> TV Shows</h4>
-            <ul>
-              <li><a href="#">netflix</a></li>
-              <li><a href="#">apple Tv</a></li>
-              <li><a href="#">amazone tv</a></li>
-              <li><a href="#">sony tv</a></li>
-            </ul>
-          </div>
-          <div class="box padding dark-bg">
-            <h4><i class="book icon"></i> Books</h4>
-            <ul>
-              <li><a href="#">Articls</a></li>
-              <li><a href="#">Novels</a></li>
-              <li><a href="#">Manga</a></li>
-              <li><a href="#">NewsPaper</a></li>
-            </ul>
+      <section id="contact-us" class="dark-bg">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form class="flex flex-column">
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Enter Full Name"
+              required
+            />
+            <input
+              type="email"
+              class="form-input"
+              placeholder="Enter Your E-Mail Here"
+              required
+            />
+            <textarea
+              class="form-input"
+              placeholder="Enter Your Message Here"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-primary">submit</button>
+          </form>
+        </div>
+      </section>
+      <section id="copy-rights">
+        <div class="container light-bg">
+          <div class="grid grid-4">
+            <div class="box padding dark-bg">
+              <h4><i class="music icon"></i> Music</h4>
+              <ul class="nostyle">
+                <li><a href="#">pop</a></li>
+                <li><a href="#">rap</a></li>
+                <li><a href="#">rock</a></li>
+                <li><a href="#">occidental</a></li>
+              </ul>
+            </div>
+            <div class="box padding dark-bg">
+              <h4><i class="film icon"></i> Movies</h4>
+              <ul>
+                <li><a href="#">horror</a></li>
+                <li><a href="#">drama</a></li>
+                <li><a href="#">comedy</a></li>
+                <li><a href="#">action</a></li>
+              </ul>
+            </div>
+            <div class="box padding dark-bg">
+              <h4><i class="tv icon"></i> TV Shows</h4>
+              <ul>
+                <li><a href="#">netflix</a></li>
+                <li><a href="#">apple Tv</a></li>
+                <li><a href="#">amazone tv</a></li>
+                <li><a href="#">sony tv</a></li>
+              </ul>
+            </div>
+            <div class="box padding dark-bg">
+              <h4><i class="book icon"></i> Books</h4>
+              <ul>
+                <li><a href="#">Articls</a></li>
+                <li><a href="#">Novels</a></li>
+                <li><a href="#">Manga</a></li>
+                <li><a href="#">NewsPaper</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="dark-bg text-center padding">
-        <p>Copyright &copy; 2021 | <span>MyMultMd</span></p>
-      </div>
+        <div class="dark-bg">
+          <p>Copyright &copy; 2021 | <span>MyMultMd</span></p>
+        </div>
+      </section>
     </footer>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>

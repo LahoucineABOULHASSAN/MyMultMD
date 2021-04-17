@@ -132,10 +132,11 @@ header#header #myTopnav .menu {
   margin-right: 1rem;
 }
 header#header #myTopnav a {
-  display: inline-block;
-  color: #fff;
+  text-transform: capitalize;
   letter-spacing: 1px;
   padding: 1rem 1.5rem;
+  display: inline-block;
+  color: #fff;
 }
 header#header #myTopnav a.active {
   background-color: rgba(162, 162, 162, 0.2);
@@ -175,7 +176,7 @@ header#header .jumbutron {
 }
 
 section {
-  max-width: 1080px;
+  max-width: 1640px;
   padding: 4rem 0;
   margin: 0 auto;
 }
@@ -313,46 +314,103 @@ section {
   background: rgba(65, 65, 65, 0.4);
 }
 
-#gift-card {
+#gift-card,
+#about-us {
   padding: 0;
+  grid-gap: 0;
 }
-#gift-card .box1 {
+#gift-card .box1,
+#about-us .box1 {
   height: 100%;
 }
-#gift-card .box1 img {
+#gift-card .box1 img,
+#about-us .box1 img {
   height: 100%;
 }
-#gift-card .box2 {
+#gift-card .box2,
+#about-us .box2 {
   padding: 2rem;
 }
 #gift-card .box2 h3,
-#gift-card .box2 a {
-  color: #e80909;
+#gift-card .box2 a,
+#about-us .box2 h3,
+#about-us .box2 a {
   text-transform: uppercase;
+  color: #000;
 }
-#gift-card .box2 .text {
+#gift-card .box2 .text,
+#about-us .box2 .text {
   text-align: justify;
-  color: #b1b1b1;
+  color: #000;
 }
-#gift-card .box2 hr {
+#gift-card .box2 hr,
+#about-us .box2 hr {
+  border-color: #000;
   margin-bottom: 1rem;
 }
-#gift-card .box2 a:hover {
+#gift-card .box2 a:hover,
+#about-us .box2 a:hover {
   color: #55cbde;
 }
 
-#footer {
+#gift-card .box2 {
+  background: rgba(232, 9, 9, 0.5);
+}
+
+#about-us .box2 {
+  background: rgba(246, 188, 1, 0.7);
+}
+
+#footer #contact-us .container {
+  width: 80%;
   padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+#footer #contact-us h2 {
+  color: #b1b1b1;
+  margin-bottom: 2rem;
+}
+#footer #contact-us input,
+#footer #contact-us textarea {
+  width: 100%;
+  border: none;
+  color: #d8d8d8;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  background: none;
+  border-top: 1px solid #f6bc01;
+  border-bottom: 2px solid #e80909;
+}
+#footer #contact-us input:focus,
+#footer #contact-us textarea:focus {
+  outline: none;
+  background: rgba(65, 65, 65, 0.4);
+}
+#footer #contact-us button {
+  color: #000;
+  margin-top: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  background: rgba(246, 188, 1, 0.8);
+}
+#footer #contact-us button:hover {
+  cursor: pointer;
+  background: rgba(232, 9, 9, 0.5);
+}
+#footer section {
+  padding: 0;
 }
 #footer .grid-4 {
-  margin-bottom: 4rem;
+  margin: 4rem 0;
 }
 #footer .box,
 #footer p {
   padding: 1rem;
 }
 #footer .box {
-  border-bottom: 2px solid #f6bc01;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -362,11 +420,31 @@ section {
 }
 #footer .box li a:hover {
   text-decoration: underline;
-  color: #f6bc01;
   padding-left: 0.5rem;
 }
-#footer .box:hover h4 {
+#footer .box:nth-child(1),
+#footer .box:nth-child(2) {
+  border-bottom: 3px solid #e80909;
+}
+#footer .box:nth-child(1):hover h4,
+#footer .box:nth-child(2):hover h4 {
+  color: #e80909;
+}
+#footer .box:nth-child(1) li a:hover,
+#footer .box:nth-child(2) li a:hover {
   color: #f6bc01;
+}
+#footer .box:nth-child(3),
+#footer .box:nth-child(4) {
+  border-bottom: 3px solid #f6bc01;
+}
+#footer .box:nth-child(3):hover h4,
+#footer .box:nth-child(4):hover h4 {
+  color: #f6bc01;
+}
+#footer .box:nth-child(3) li a:hover,
+#footer .box:nth-child(4) li a:hover {
+  color: #e80909;
 }
 #footer p {
   margin: 0;

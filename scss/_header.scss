@@ -15,10 +15,11 @@ header#header {
       margin-right: 1rem;
     }
     a {
-      display: inline-block;
-      color: setColor($dark-bg-color);
+      text-transform: capitalize;
       letter-spacing: 1px;
       padding: 1rem 1.5rem;
+      display: inline-block;
+      color: setColor($dark-bg-color);
       &.active {
         background-color: rgba($light-bg-color, 0.2);
         color: $warning-color;

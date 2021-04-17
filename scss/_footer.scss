@@ -1,15 +1,57 @@
 //-- GRID LINKS --\\
 #footer {
-  padding-top: 4rem;
+  #contact-us {
+    .container {
+      width: 80%;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    h2 {
+      color: $grey;
+      margin-bottom: 2rem;
+    }
+    input,
+    textarea {
+      width: 100%;
+      border: none;
+      color: $light;
+      padding: 1rem;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      background: none;
+      border-top: 1px solid $warning-color;
+      border-bottom: 2px solid $danger-color;
+    }
+    input:focus,
+    textarea:focus {
+      outline: none;
+      background: rgba($dark, 0.4);
+    }
+    button {
+      color: #000;
+      margin-top: 1rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      border-radius: 15px;
+      text-transform: uppercase;
+      background: rgba($warning-color, 0.8);
+      &:hover {
+        cursor: pointer;
+        background: rgba($danger-color, 0.5);
+      }
+    }
+  }
+  section {
+    padding: 0;
+  }
   .grid-4 {
-    margin-bottom: 4rem;
+    margin: 4rem 0;
   }
   .box,
   p {
     padding: 1rem;
   }
   .box {
-    border-bottom: 2px solid $warning-color;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     li a {
@@ -17,13 +59,35 @@
       line-height: 1.5;
       &:hover {
         text-decoration: underline;
-        color: $warning-color;
         padding-left: 0.5rem;
       }
     }
+  }
+  .box:nth-child(1),
+  .box:nth-child(2) {
+    border-bottom: 3px solid $danger-color;
+    &:hover {
+      h4 {
+        color: $danger-color;
+      }
+    }
+    li a {
+      &:hover {
+        color: $warning-color;
+      }
+    }
+  }
+  .box:nth-child(3),
+  .box:nth-child(4) {
+    border-bottom: 3px solid $warning-color;
     &:hover {
       h4 {
         color: $warning-color;
+      }
+    }
+    li a {
+      &:hover {
+        color: $danger-color;
       }
     }
   }
