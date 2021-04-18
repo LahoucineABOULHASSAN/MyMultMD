@@ -1,7 +1,7 @@
-# myMediaPage
+# mymultmd
 
 This project is a 100% front-end web app build using the HTML5 and SASS.
-It's a single page for login and signing up to some website.
+It's a single page for music and videos plateform.
 The Technologies used on this app are the following:
 -HTML5
 -SASS
@@ -36,9 +36,13 @@ images:
 [music image 2](https://images.unsplash.com/photo-1602848596095-481682701e89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1002&q=80).
 [music image 3](https://images.unsplash.com/photo-1602848597941-0d3d3a2c1241?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=990&q=80).
 
-[vedio image](https://images.unsplash.com/photo-1616356607338-fd87169ecf1a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80).
+[vedio](https://www.pexels.com/video/a-bearded-man-holding-on-the-sail-rope-aboard-a-boat-5302616/).
+
 [entertainment image](https://images.unsplash.com/photo-1522249210728-7cd95094022a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80).
+
 [gift image](https://images.unsplash.com/photo-1607083681678-52733140f93a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80).
+
+[about image](https://images.unsplash.com/photo-1490173032805-2f6274a01334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80).
 
 # License
 

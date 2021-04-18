@@ -1,12 +1,15 @@
 header#header {
+  max-width: 1640px;
+  margin: 0 auto;
   #myTopnav {
     top: 0;
-    right: 0;
     z-index: 2;
     width: 100%;
     display: flex;
+    margin: 0 auto;
     position: fixed;
     overflow: hidden;
+    max-width: 1640px;
     flex-direction: row;
     justify-content: space-between;
     background-color: $dark-bg-color;
@@ -37,8 +40,9 @@ header#header {
   .header {
     background: setBG($cover);
     height: 100vh;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
+    border: 2px solid #000;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

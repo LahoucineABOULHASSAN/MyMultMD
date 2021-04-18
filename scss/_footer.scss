@@ -44,8 +44,11 @@
   section {
     padding: 0;
   }
-  .grid-4 {
-    margin: 4rem 0;
+  #copy-rights {
+    .container {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
   }
   .box,
   p {
