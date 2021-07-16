@@ -22,7 +22,7 @@ to watch the sass files run this command:
 
 # links
 
-[my portfolio](https://vueportfolioapp.netlify.app).
+[my portfolio](https://aboulhassan.netlify.app/).
 [my github](https://github.com/LahoucineABOULHASSAN).
 
 packages:
